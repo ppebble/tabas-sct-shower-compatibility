@@ -1,0 +1,13 @@
+version=1
+id=
+title=Take A Bath And Shower + SCT Compatibility
+description=[h1]Take A Bath And Shower + SCT Compatibility[/h1]
+description=Keeps SCT Guardian character bodies equipped during TABAS bathing. Ordinary outfits and equipment remain subject to TABAS's own settings.
+description=Requires Take A Bath And Shower, SCT: Dispatch and SCT: Guardian. Does not require 2Dimension Wardrobe.
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3592172476]Take A Bath And Shower[/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3689462578]SCT: Dispatch[/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3609052036]SCT: Guardian[/url]
+description=Original compatibility code by ask13. SCT belongs to Ling Li and its credited contributors; TABAS belongs to its original authors. No dependency files are redistributed.
+description=UNRELEASED: local test build. Runtime SP/MP validation and SCT author permission are pending. Do not publish this draft yet.
+tags=Build 42;QoL
+visibility=private

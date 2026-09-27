@@ -1,0 +1,7 @@
+name=Take A Bath And Shower + SCT Compatibility
+id=TABASSCTCompatibility
+author=ask13
+modversion=1.0.0
+versionMin=42.20.4
+require=ShadowCatTacticsDispatch,ShadowCatTacticsGuardian,TakeABathAndShowerNew
+description=Keeps verified SCT Guardian character-body items equipped during TABAS bathing. Ordinary clothing remains controlled by TABAS. Local test build; not yet validated in game.
