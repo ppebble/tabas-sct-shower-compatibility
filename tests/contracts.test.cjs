@@ -13,6 +13,15 @@ assert.doesNotMatch(lua, /AddExcludeBodyLocations|canAutoUnequipClothing\s*=|Eve
 assert.doesNotMatch(info + lua, /4123567854998|TDWRegistries|tdw:/);
 const workshop = read('workshop/workshop.txt');
 assert.match(workshop, /^id=$/m);
-assert.match(workshop, /^visibility=private$/m);
+assert.match(workshop, /^visibility=friendsOnly$/m);
 for (const id of ['3592172476', '3689462578', '3609052036']) assert.ok(workshop.includes(id));
 console.log('PASS metadata, narrow scope, independent dependency and publication-gate contracts');
+
+assert.match(info, /^poster=poster\.png$/m);
+for (const [file, size] of [['common/poster.png',512],['workshop/preview.png',256]]) {
+ const data=fs.readFileSync(path.join(root,file));
+ assert.equal(data.subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+ assert.equal(data.readUInt32BE(16),size); assert.equal(data.readUInt32BE(20),size);
+ assert.ok(data.length < 1024*1024);
+}
+console.log('PASS artwork dimensions and size');

@@ -49,6 +49,7 @@ Do not infer multiplayer rendering correctness from source tests or file hashes.
 
 The SCT author explicitly requests permission for dependent public mods. Obtain
 permission before publishing, credit the author, and finish live SP/MP QA.
-`workshop/workshop.txt` is private, has no ID, and is a draft. Artwork is not yet
-provided. Steam Required Items must be configured separately on publication;
+`workshop/workshop.txt` uses `friendsOnly`, with a blank ID for manual first upload.
+User-provided poster and preview are included. Public release remains gated on
+author permission and live QA; friends-only visibility does not confer permission. Steam Required Items must be configured separately on publication;
 description links and `require=` do not create Workshop relationships.

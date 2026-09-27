@@ -1,0 +1,38 @@
+[h1]Take A Bath And Shower + SCT Compatibility[/h1]
+Build 42.20.4 compatibility patch for Take A Bath And Shower and Shadow Cat Tactics: Dispatch / Guardian.
+
+[h2]What it does[/h2]
+TABAS continues to remove and restore ordinary clothing according to its own settings. This patch keeps SCT Guardian character-body items equipped during baths and showers.
+[list]
+[*]Female body variants: T512 and T2048.
+[*]Female R18 body variants: T512 and T2048.
+[*]Male body variants: T512 and T2048.
+[*]Body With Headgear variants: 512 and 2048.
+[/list]
+The patch uses TABAS's existing full-type exclusion table and does not replace its outfit functions. Only these eight body items are protected, not the entire ears slot. Ordinary SCT outfits, armor and accessories remain under TABAS's control.
+
+[h2]Requirements and load order[/h2]
+[olist]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3689462578]Shadow Cat Tactics: Dispatch[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3609052036]Shadow Cat Tactics: Guardian[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3592172476]Take A Bath And Shower[/url], including its required DepthMap Fix component.
+[*]Take A Bath And Shower + SCT Compatibility
+[/olist]
+Enable this compatibility patch after the required mods. 2Dimension Wardrobe and the TABAS + 2DW patch are not required. For the SCT body setup, disable the VS body replacer rather than enabling both body systems together.
+
+[h2]Using Lifestyle: Hobbies too?[/h2]
+Keep Lifestyle before TABAS. TABAS provides its own bath and shower interactions and Lifestyle hygiene integration. This patch applies to TABAS-managed bathing, not Lifestyle-only bathing.
+
+[h2]Compatibility scope[/h2]
+This package contains only original compatibility code and its artwork. It does not modify or redistribute files from TABAS, SCT: Dispatch or SCT: Guardian. It does not alter SCT crafting, body switching, clothing stats or skin customization.
+For multiplayer, install this patch and its required mods on the server and every client, using matching versions.
+
+[h2]Testing status[/h2]
+Friends-only test release. Source behavior tests and local package checks have passed. Live bath/shower visuals, cancellation and multiplayer synchronization have not yet been verified. Public release is pending the SCT author's permission and in-game testing.
+
+[h2]Credits[/h2]
+Compatibility patch by ask13. Shadow Cat Tactics belongs to Ling Li and its credited contributors. Take A Bath And Shower belongs to its original authors. This is an unofficial compatibility patch, not an endorsement by the original authors.
+
+[hr][/hr]
+[h2]More Project Zomboid Mods by ask13[/h2]
+Browse other focused Build 42 tools and compatibility mods in the [url=https://github.com/ppebble/project-zomboid-modding]Project Zomboid Mods & Tools catalog[/url].

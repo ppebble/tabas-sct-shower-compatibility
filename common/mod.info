@@ -1,6 +1,7 @@
 name=Take A Bath And Shower + SCT Compatibility
 id=TABASSCTCompatibility
 author=ask13
+poster=poster.png
 modversion=1.0.0
 versionMin=42.20.4
 require=ShadowCatTacticsDispatch,ShadowCatTacticsGuardian,TakeABathAndShowerNew

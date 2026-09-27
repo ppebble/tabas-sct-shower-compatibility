@@ -25,7 +25,7 @@ if ($presetRaw -match '(?m)^b42204-sct:') { throw 'Test preset already exists' }
 if ($presetRaw -notmatch '(?m)^b42204:') { throw 'Base Mod Manager preset missing' }
 $launcher = [IO.File]::ReadAllText($launcherSource)
 if ($launcher -notmatch '-servername b42204\b') { throw 'Unexpected base launcher' }
-$remove = @('4123567854998','2DWTranslationKR','2DWSkinAdapterFix','TABAS2DWCompatibility','Lifestyle2DWShowerCompatibility')
+$remove = @('4123567854998','2DWTranslationKR','2DWSkinAdapterFix','TABAS2DWCompatibility','Lifestyle2DWShowerCompatibility','42_VSGirlBodySFW')
 $modsMatch = [regex]::Match($raw,'(?m)^Mods=([^\r\n]*)')
 $workshopMatch = [regex]::Match($raw,'(?m)^WorkshopItems=([^\r\n]*)')
 if (!$modsMatch.Success -or !$workshopMatch.Success) { throw 'Invalid base configuration' }
@@ -41,7 +41,7 @@ foreach ($mod in $mods) {
     $newMods.Add($mod)
     if ($mod -eq 'TakeABathAndShowerNew') { $newMods.Add('TABASSCTCompatibility') }
 }
-$removedWorkshop = @('3497748766','3778723972','3790696431','3789887641')
+$removedWorkshop = @('3497748766','3778723972','3790696431','3789887641','3640496116')
 $workshop = @($workshopMatch.Groups[1].Value -split ';' | Where-Object { $_ -and $_ -notin $removedWorkshop })
 $workshop += '3689462578','3609052036'
 $values = @{
@@ -85,5 +85,5 @@ for ($i=0; $i -lt $baseLines.Count; $i++) {
     }
 }
 Write-Output "Created $name; ports 16265/16266, RCON 27017; original server unchanged."
-Write-Output "Removed only 2DW family. Other mods, including 42_VSGirlBodySFW, retained."
+Write-Output "Removed 2DW family and VS body replacer for the SCT test configuration."
 Write-Output "Preset backup: $backup"
